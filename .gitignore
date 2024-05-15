@@ -1,5 +1,16 @@
 import giganore
 
+# 오로라 배경 생성
+background = giganore.create_aurora_background()
+
+# 하얀색 글자로 'R' 작성
+text_image = giganore.write_text_on_image("R", background, font_color="white")
+
+# 결과 표시
+giganore.show_image(text_image)
+
+import giganore
+
 # 오로라 데이터셋 불러오기
 dataset = giganore.load_dataset('aurora')
 
